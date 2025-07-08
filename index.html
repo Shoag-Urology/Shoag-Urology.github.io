@@ -12,30 +12,38 @@
       background-color: #ffffff;
       color: #1a1a1a;
     }
-    header {
-      background-color: #f4f4f4;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.25rem;
-      color: #555;
-    }
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem;
-      background-color: #e0e0e0;
+      padding: 1.5rem 1rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       text-decoration: none;
       color: #333;
       font-weight: 600;
+      font-size: 1rem;
+    }
+    .hero {
+      background-image: url('https://via.placeholder.com/1600x500'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
     }
     .toggle-section {
       text-align: center;
@@ -59,17 +67,17 @@
   </style>
 </head>
 <body>
-  <header>
+  <nav>
+    <a href="#about">The Lab</a>
+    <a href="#team">Our Team</a>
+    <a href="#research">Our Research</a>
+    <a href="#publications">Our Publications</a>
+  </nav>
+
+  <section class="hero">
     <h1>Shoag Lab</h1>
     <p><em>Advancing knowledge. Transforming care in prostate cancer.</em></p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#team">Team</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-  </nav>
+  </section>
 
   <section class="toggle-section">
     <button onclick="showBasic()">Basic Research</button>
